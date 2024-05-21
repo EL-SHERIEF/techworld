@@ -1,0 +1,16 @@
+<svg width="340" height="340" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M170.125 170L53.25 53.125" stroke="#7D8387" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+<path d="M287 286.875L170.125 170" stroke="#7D8387" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+<path d="M170.125 170L287 53.125" stroke="#7D8387" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+<path d="M53.25 286.875L170.125 170" stroke="#7D8387" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+<path d="M170.125 268.812C224.698 268.812 268.938 224.573 268.938 170C268.938 115.427 224.698 71.1875 170.125 71.1875C115.552 71.1875 71.3125 115.427 71.3125 170C71.3125 224.573 115.552 268.812 170.125 268.812Z" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M125.5 170H21.375" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M318.875 170H214.75" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M170.125 125.375V21.25" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M170.125 318.75V214.625" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M170.125 191.25C181.861 191.25 191.375 181.736 191.375 170C191.375 158.264 181.861 148.75 170.125 148.75C158.389 148.75 148.875 158.264 148.875 170C148.875 181.736 158.389 191.25 170.125 191.25Z" fill="#42A6F8"/>
+<path d="M301.875 54.25C310.712 54.25 317.875 47.0866 317.875 38.25C317.875 29.4134 310.712 22.25 301.875 22.25C293.038 22.25 285.875 29.4134 285.875 38.25C285.875 47.0866 293.038 54.25 301.875 54.25Z" stroke="white" stroke-width="6"/>
+<path d="M38.375 54.25C47.2116 54.25 54.375 47.0866 54.375 38.25C54.375 29.4134 47.2116 22.25 38.375 22.25C29.5384 22.25 22.375 29.4134 22.375 38.25C22.375 47.0866 29.5384 54.25 38.375 54.25Z" stroke="white" stroke-width="6"/>
+<path d="M301.875 317.75C310.712 317.75 317.875 310.587 317.875 301.75C317.875 292.913 310.712 285.75 301.875 285.75C293.038 285.75 285.875 292.913 285.875 301.75C285.875 310.587 293.038 317.75 301.875 317.75Z" stroke="white" stroke-width="6"/>
+<path d="M38.375 317.75C47.2116 317.75 54.375 310.587 54.375 301.75C54.375 292.913 47.2116 285.75 38.375 285.75C29.5384 285.75 22.375 292.913 22.375 301.75C22.375 310.587 29.5384 317.75 38.375 317.75Z" stroke="white" stroke-width="6"/>
+</svg>

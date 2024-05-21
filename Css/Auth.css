@@ -1,0 +1,21 @@
+.LogoHeader{gap: 5px;display: flex;flex-direction: row;justify-content: start;align-items: start;position: absolute;inset-inline-start: 30px;top:20px}
+.LogoHeader img{transition: 0.2s ease-in-out;width: 40px;height: 40px;object-fit: contain;background-color: black;border-radius: 200px;padding: 5px;}
+.LogoHeader:hover img{scale: 110%;}
+
+body{overflow: hidden;}
+.nav{display: none;}
+.contact-footer{display: none;}
+.overflowfooter{display: none;}
+ .login{height: 100vh;display: flex;justify-content: center;align-items: center;}
+.login .lilform{box-shadow: -0.2px 0.2px 0 0.5px rgba(255, 255, 255, 0.268),inset 5px 4px 10px 0.5px rgba(255, 255, 255, 0.008);
+    padding: 50px;padding-bottom: 30px;height: fit-content !important;
+    width: 500px;height: 50%;background-color: var(--border);border-radius: 20px;backdrop-filter: blur(10px); }
+    .tdobj{position: absolute;left: 10vw;bottom: 2vw;width: 30vw;pointer-events: none;}
+    .login .lilform h1{color: white;margin: 0;font-size: 28px;}
+    .login .lilform h2{color: white;margin-top: 0;font-size: 15px;font-weight: 400;opacity: 0.6;margin-bottom: 40px;}
+.donthave{
+border-top: solid 1px var(--border-bolder);padding-top: 25px;font-size: 14px;
+width: 100%;text-align: center;color: white;font-weight: 400;
+}
+.donthave span{color: var(--primary);text-decoration: underline;font-weight: 700;}
+.login .lilform .submit{padding-bottom: 20px;}
