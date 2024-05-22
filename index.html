@@ -84,6 +84,18 @@
                             <a href="#">Microsoft Cloud Platform</a>
                           </div>
                     </div>
+                    <div class="col">
+                        <div class="arrow-link">
+                            <div class="icon">
+                                <svg focusable="false" aria-hidden="true" viewBox="0 0 30 30"><path fill-rule="evenodd" clip-rule="evenodd" d="M29.9995 29L29.9995 0.999451L29.9995 -0.000549316H28.9995H0.999527L0.999528 1.99945L26.5864 1.99945L0.292969 28.2928L1.70718 29.7071L27.9995 3.41471L27.9995 29H29.9995Z"></path></svg>
+                                <svg class="poped" focusable="false" aria-hidden="true" viewBox="0 0 30 30"><path fill-rule="evenodd" clip-rule="evenodd" d="M29.9995 29L29.9995 0.999451L29.9995 -0.000549316H28.9995H0.999527L0.999528 1.99945L26.5864 1.99945L0.292969 28.2928L1.70718 29.7071L27.9995 3.41471L27.9995 29H29.9995Z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="context">
+                            <a href="#">Microsoft Cloud Platform</a>
+                          </div>
+                    </div>
+
        
 <div class="bb">
     <div class="col">
@@ -1762,60 +1774,7 @@ function horizontalLoop(items, config) {
 }
 
 </script>
-<script>
-    const section2child = (elem) => {
-      interact(elem)
-        .draggable({
-          inertia: true,
-          modifiers: [
-            interact.modifiers.restrictRect({
-              restriction: 'child',
-              endOnly: false,
-            }),
-          ],
-          autoScroll: {
-            container: elem.parentNode,
-            margin: 20,
-            speed: 10000,
-          },
-          onmove: (event) => {
-            const target = event.target;
-            const dx = event.dx;
 
-            target.scrollLeft -= dx;
-          },
-        });
-    };
-
-    document.querySelectorAll(".section2 .body .wrapper").forEach(section2child);
- 
- 
-    const section7boxes = (elem) => {
-      interact(elem)
-        .draggable({
-          inertia: true,
-          modifiers: [
-            interact.modifiers.restrictRect({
-              restriction: 'child',
-              endOnly: false,
-            }),
-          ],
-          autoScroll: {
-            container: elem.parentNode,
-            margin: 20,
-            speed: 1600,
-          },
-          onmove: (event) => {
-            const target = event.target;
-            const dx = event.dx;
-
-            target.scrollLeft -= dx;
-          },
-        });
-    };
-
-    document.querySelectorAll(".section7 .wrapper").forEach(section7boxes);
- </script>
         <script>
 
 
@@ -1908,30 +1867,6 @@ hoverMouse($('.magnetic-ball'));
 
 
 
-
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 600) {
-          document.querySelector(".nav").style.backgroundColor = "var(--white)";
-              document.querySelector(".nav").style.color = "var(--black)";
-              document.querySelector(".nav").style.borderBottom = "solid 1px var(--border)";
-              document.querySelector(".nav .btn-1").style.backgroundColor = "var(--primary)";
-              document.querySelector(".nav .mburger svg").style.fill = "var(--black)";
-              document.querySelector(".nav .mburger svg").style.stroke = "var(--black)";
-        }
-  
-        else{
-          document.querySelector(".nav").style.backgroundColor = "transparent";
-              document.querySelector(".nav").style.color = "var(--white)";
-              document.querySelector(".nav").style.borderBottom = "solid 1px transparent";
-              document.querySelector(".nav .btn-1").style.backgroundColor = "transparent";
-              document.querySelector(".nav .mburger svg").style.fill = "var(--white)";
-              document.querySelector(".nav .mburger svg").style.stroke = "var(--white)";
-        }
-    })
-  })
-  
 
 
 gsap.registerPlugin(ScrollTrigger);
