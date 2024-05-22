@@ -1660,7 +1660,30 @@
 <script src="./Js/jquery.js"></script>
 <script src="./Js/gsap.js"></script>
 <script src="./Js/Scrolltrigger.js"></script>
+<script>
+    const works = document.querySelector(".section7 .slider");
+console.log(works.offsetWidth)
+function getScrollAmount() {
+	let worksWidth = works.scrollWidth;
+	return -(worksWidth - window.innerWidth);
+}
 
+const tween = gsap.to(works, {
+	x: getScrollAmount,
+	duration: 3,
+	ease: "none",
+});
+ScrollTrigger.create({
+	trigger:".section7 .slider",
+	start:"5% 22%",
+	end: () => `+=${getScrollAmount() * -1}` ,
+	pin:true,
+	animation:tween,
+	scrub:1,
+	invalidateOnRefresh:true,
+
+})
+</script>
 <script>
 
 // Marquee2
