@@ -240,26 +240,143 @@ html{
 /* ///END Marquee */
 
 /*  SECTION 1111111 */
-.section1{height: 980px;width: 100%;display: flex;flex-direction: column;justify-content: center;align-items:end;position: relative;}
-.section1-image{width: 37vw;inset-inline-start: 4vw;position: absolute;opacity: 0;transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
-.section1 .box{width: 55%;max-height:4.7vw;overflow: hidden;display: flex;flex-direction: row;justify-content: start;align-items: start;background: transparent;border: none;position: relative;transition: max-height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
-.section1 .box .num{width: 8%;font-size: 25px;margin-top: 0.2vw;font-weight: 900;color: #7D8387;;display: flex;flex-direction: row;justify-content: start;align-items: start;height: 100%;}
-.section1 .box .content{width: 80%;row-gap: 14px;display: flex;flex-direction: column;justify-content: start;align-items: start;}
-.section1 .box .content h1{font-size: 3.5vw;letter-spacing: -0.2vw;line-height: 3vw;font-weight: 800;margin-top: 0;margin-bottom: 20px;color: var(--black);position: relative;transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
-.section1 .box .content h1::after{width: 0px;height: 4px;content: '';inset-inline: 0;bottom: -4px;;position: absolute;z-index: 2;background-color: var(--primary);transition:400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
-.section1 .box:hover h1::after{width: 100%;}
-.tags{gap: 6px;width: 100%;display: flex;row-gap:10px ;color: var(--black);flex-direction: row;flex-wrap: wrap;justify-content: start;align-items: start;}
-.tags .tag{padding: 0 14px;height: 30px;font-size: 12px;font-weight: 700;border-radius: 1000px;overflow: hidden;display: flex;flex-direction: column;justify-content: center;align-items: center;position: relative;border: solid 1px var(--border-bolder);font-family: 'IBM Plex Mono', monospace;}
-.tags .tag:hover{border: solid 1px var(--black)}
-.tags .tag span{transition:400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;line-height: 0;font-weight: inherit;text-transform: uppercase;}
-.tags .tag span:last-child{position: absolute;bottom: -30px;}
-.tags .tag:hover span{transform: translateY(-44px);}
-.section1 .box .content p{width: 90%;padding-bottom: 20px;margin-top: 0;font-size: 15px;text-align: start;}
-#box1:checked ~ .box._1{max-height: 100%;transition: var(--boxes-time);}#box2:checked ~ .box._2{max-height: 100%;transition: var(--boxes-time);}#box3:checked ~ .box._3{max-height: 100%;transition: var(--boxes-time);}#box4:checked ~ .box._4{max-height: 100%;transition: var(--boxes-time);}#box5:checked ~ .box._5{max-height: 100%;transition: var(--boxes-time);}#box6:checked ~ .box._6{max-height: 100%;transition: var(--boxes-time);}
-#box1:checked ~ .box._1 h1{color: var(--primary);}#box2:checked ~ .box._2 h1{color: var(--primary);}#box3:checked ~ .box._3 h1{color: var(--primary);}#box4:checked ~ .box._4 h1{color: var(--primary);}#box5:checked ~ .box._5 h1{color: var(--primary);}#box6:checked ~ .box._6 h1{color: var(--primary);}
-#box1:checked ~ .box._1 h1::after{display: none;}#box2:checked ~ .box._2 h1::after{display: none;}#box3:checked ~ .box._3 h1::after{display: none;}#box4:checked ~ .box._4 h1::after{display: none;}#box5:checked ~ .box._5 h1::after{display: none;}#box6:checked ~ .box._6 h1::after{display: none;}
-#box1:checked ~ .section1-image._1{opacity: 1;}#box2:checked ~ .section1-image._2{opacity: 1;}#box3:checked ~ .section1-image._3{opacity: 1;}#box4:checked ~ .section1-image._4{opacity: 1;}#box5:checked ~ .section1-image._5{opacity: 1;}#box6:checked ~ .section1-image._6{opacity: 1;}
-.boxes{display: none;}
+.section1 {
+  height: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+
+.section1-image {
+  width: 37vw;
+  inset-inline-start: 4vw;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.section1 .box {
+  width: 55%;
+  max-height: 4.7vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  background: transparent;
+  border: none;
+  position: relative;
+  transition: max-height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.section1 .box .num {
+  width: 8%;
+  font-size: 25px;
+  margin-top: 0.2vw;
+  font-weight: 900;
+  color: #7D8387;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+}
+
+.section1 .box .content {
+  width: 80%;
+  row-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.section1 .box .content h1 {
+  font-size: 3.5vw;
+  letter-spacing: -0.2vw;
+  line-height: 3vw;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--black);
+  position: relative;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.section1 .box .content h1::after {
+  width: 0px;
+  height: 4px;
+  content: '';
+  inset-inline: 0;
+  bottom: -4px;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--primary);
+  transition: 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.section1 .box:hover h1::after {
+  width: 100%;
+}
+
+.tags {
+  gap: 6px;
+  width: 100%;
+  display: flex;
+  row-gap: 10px;
+  color: var(--black);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+.tags .tag {
+  padding: 0 14px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: solid 1px var(--border-bolder);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.tags .tag:hover {
+  border: solid 1px var(--black);
+}
+
+.tags .tag span {
+  transition: 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 0;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.tags .tag span:last-child {
+  position: absolute;
+  bottom: -30px;
+}
+
+.tags .tag:hover span {
+  transform: translateY(-44px);
+}
+
+.section1 .box .content p {
+  width: 90%;
+  padding-bottom: 20px;
+  margin-top: 0;
+  font-size: 15px;
+  text-align: start;
+}
 
 @media screen and (max-width: 1000px){
   .section1{height: fit-content;padding-top: 60vw;margin-top: 8vh;margin-bottom: 10vh;display: flex;align-items:start;justify-content: start;}
