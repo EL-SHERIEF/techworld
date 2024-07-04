@@ -455,7 +455,7 @@ body[dir="rtl"]{
 .section4 .body .box .header .arrow img{width: 30px; height: 30px;border-radius: 200px;padding: 10px;transition: 0.1s ease-in-out;filter: brightness(100%) !important;}
 .section4 .body .box .header .arrow:hover{transform: scale(120%);filter: brightness(100%) !important;}
 
-
+.section4.light .header span{color: black !important;margin: 10px 0 !important;}
 
 .customdropdown{position: relative;direction: ltr;-webkit-appearance: none;background-image: url(../Assets/Icons/downarrow.svg);background-position: 95% 50%;background-size: 15px;background-repeat: no-repeat;-moz-appearance: none;appearance: none;border-radius: 500px;border-bottom: solid 1px #7c8286;border-top: 0;border-left: 0;border-right: 0;transition: 0.1s ease-in-out;outline: none;background-color: #242424;color: white;height: 55px;padding: 0 1.7vw;font-size: 17px;width: 20.5vw;font-weight: 500;}
 .customdropdown.filtered{background-image: url(../Assets/Icons/filter.svg);background-position: 90% 50%;background-size: 18px;background-repeat: no-repeat;font-size: 15px;border-bottom: 0;background-color: #2e2e2e;color: rgb(255, 255, 255);height: 55px;padding: 0 1.5vw;width: 11vw;font-weight: 500;}
@@ -479,7 +479,7 @@ body[dir="rtl"]{
   background-color: white;
 }
 .section4.light h1{color: var(--black);font-size: 30px !important;line-height: 40px !important;}
-.section4.light .box .header p{color: var(--black) !important;opacity: 0.9 !important;}
+.section4.light .box .header p{ display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;color: var(--black) !important;opacity: 0.9 !important;}
 
 
 .section4 .body{height: max-content;width: 100%;display: flex;flex-direction: row;justify-content:space-between;align-items: start;flex-wrap: wrap;position: relative;}
@@ -1202,3 +1202,130 @@ width: 4px;height: 4px;}
 iframe{border-radius: 25px;overflow: hidden;width: 70% !important;height: 450px !important;margin: 50px 0;}
 .blog-page .preview{border-radius: 25px;overflow: hidden;width: 70% !important;height: 450px !important;margin: 50px 0;object-fit: cover;margin-top: 60px;}
 .blog-page hr{width: 100%;height: 1px; border-color: var(--border-bolder);margin: 50px 0;}
+
+
+
+
+.section-event {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: start;
+margin: 10px 0px;
+width: 90%;
+padding: 50px 5%;
+}
+
+.section-event .left {
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+gap: 20px;
+}
+
+.section-event .title {
+font-size: 30px;
+margin-top: 30px;
+margin-bottom: 0;
+}
+
+.section-event .left img {
+width: 100%;
+border-radius: 10px;
+object-fit: cover;
+height: 350px;
+}
+
+.section-event .left ul {
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+gap: 15px;
+padding: 0;
+margin: 20px 0;
+}
+
+.section-event .left ul li {
+font-weight: 600;
+font-size: 15px;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+gap: 10px;
+list-style: none;
+}
+
+.section-event .left ul li::before {
+content: '•';
+margin-inline-end: 10px;
+font-size: 15px;
+color: var(--primary);
+}
+
+.section-event .left ul h2 {
+font-size: 14px;
+color: #ffffff;
+margin: 10px 0;
+background-color: rgb(0, 0, 0);
+border-radius: 5px;
+padding: 6px 15px;
+}
+
+.section-event .left ul li span {
+margin: 0 20px !important;
+font-size: 12px;
+color: #000000d7;
+background-color: rgba(0, 0, 0, 0.086);
+border-radius: 5px;
+padding: 6px 15px;
+}
+
+.section-event .right {
+width: 44%;
+}
+
+.section-event .sub {
+padding: 40px 0;
+width: 100%;
+top: 0px;
+position: -webkit-sticky; /* For Safari */
+position: sticky;
+z-index: 10;
+}
+
+.section-event .sub .lilform {
+row-gap: 20px;
+}
+
+.section-event .sub p {
+margin-bottom: 100px;
+font-size: 30px;
+margin-top: 0;
+font-weight: 600;
+}
+
+.section-event .sub input {
+background-color: #eeeeee;
+color: black;
+}
+
+.section-event .sub input:hover {
+background-color: #d4d4d4e3;
+}
+
+.section-event .sub input:focus {
+background-color: #d4d4d4e3;
+border-bottom: solid 2px var(--primary);
+}
+
+.section-event .sub .submitbtn {
+width: 100%;
+}
+
+.dateline{
+margin-top: -85px;font-size: 22px;font-weight: 700;margin-bottom: 100px;
+display: flex;flex-direction: row;justify-content: center;align-items: center;background-color: black;color: white;padding: 15px 0;width: 95%;border-radius: 15px;
+}
